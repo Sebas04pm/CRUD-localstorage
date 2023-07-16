@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD con localStorage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD con Localstorage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
+  <h1>CRUD con Localstorage</h1>
+
+  <form id="user-form">
+    <input type="text" id="name-input" placeholder="Nombre" required>
+    <input type="text" id="lastname-input" placeholder="Apellido" required>
+    <input type="text" id="phone-input" placeholder="Teléfono" required>
+    <input type="email" id="email-input" placeholder="Correo electrónico" required>
+    <button type="submit" class="add-button">Agregar</button>
+  </form>
+
+  <table id="user-table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Teléfono</th>
+        <th>Correo electrónico</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="app.js"></script>
 </body>
 </html>
